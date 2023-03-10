@@ -3,3 +3,9 @@ people = {1: {"nama": "arsene lupin", "nik": "1234", "jenis_kelamin": "male", "t
           3: {"nama": "irene adler", "nik": "6789", "jenis_kelamin": "female", "tanggal_lahir": "1884-10-07"}}
 
 nama = input('Nama? :')
+for key, value in people.items():
+    if people[key]['nama'] == nama:
+        print(value)
+
+    else:
+        print('data tak ada')
